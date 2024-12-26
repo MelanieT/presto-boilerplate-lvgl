@@ -24,20 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7def217-7290-4920-8d07-f50159a046ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/presto-boilerplate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SquareLine_Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../drivers/ft6x36/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ci/cpp.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/fileio.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SquareLine_Project.sll" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareLine_Project.sll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SquareLine_Project.spj" beforeDir="false" afterPath="$PROJECT_DIR$/../SquareLine_Project.spj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../autosave/SquareLine_Project_autosave09.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../autosave/SquareLine_Project_autosave09.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735142056615</updated>
       <workItem from="1735142057705" duration="1590000" />
-      <workItem from="1735155572887" duration="1826000" />
+      <workItem from="1735155572887" duration="1829000" />
     </task>
     <servers />
   </component>

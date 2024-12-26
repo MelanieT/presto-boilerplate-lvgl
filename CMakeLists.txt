@@ -35,7 +35,9 @@ add_subdirectory(SquareLineWorkspace/SquareLine_Project/ui)
 
 # Add your source files
 add_executable(${NAME}
-    src/main.cpp # <-- Add source files here!
+    src/main.cpp
+    src/rp2_psram.c
+    src/rp2_psram.h
 )
 
 # Include required libraries
