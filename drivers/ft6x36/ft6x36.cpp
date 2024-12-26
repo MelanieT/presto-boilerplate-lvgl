@@ -99,8 +99,8 @@ bool FT6X36::ft6x36_read(lv_indev_t *drv, lv_indev_data_t *data) {
     }
 
     touch_inputs.current_state = LV_INDEV_STATE_PR;
-    touch_inputs.last_x = (((data_buf[1] & FT6X36_MSB_MASK) << 8) | (data_buf[2] & FT6X36_LSB_MASK)) / 2;
-    touch_inputs.last_y = (((data_buf[3] & FT6X36_MSB_MASK) << 8) | (data_buf[4] & FT6X36_LSB_MASK)) / 2;
+    touch_inputs.last_x = (((data_buf[1] & FT6X36_MSB_MASK) << 8) | (data_buf[2] & FT6X36_LSB_MASK));
+    touch_inputs.last_y = (((data_buf[3] & FT6X36_MSB_MASK) << 8) | (data_buf[4] & FT6X36_LSB_MASK));
 
 #if CONFIG_LV_FT6X36_SWAPXY
     int16_t swap_buf = touch_inputs.last_x;

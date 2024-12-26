@@ -1,0 +1,3 @@
+[submodule "sparkfun-pico"]
+	path = sparkfun-pico
+	url = https://github.com/sparkfun/sparkfun-pico

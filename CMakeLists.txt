@@ -3,10 +3,20 @@ cmake_minimum_required(VERSION 3.13)
 set(PICO_PLATFORM rp2350-arm-s)
 set(PICO_BOARD pimoroni_pico_plus2_rp2350)
 
+set(PICO_COPY_TO_RAM OFF)
 set(PIMORONI_PICO_FETCH_FROM_GIT true)
 
 # Change your executable name to something creative!
 set(NAME presto-boilerplate) # <-- Name your project/executable here!
+
+# the following enables the system malloc/free to be wrapped
+set(SKIP_PICO_MALLOC 1)
+
+# the following enables wrapping in sparkfun_pico builds
+set(SFE_PICO_ALLOC_WRAP 1)
+
+# the following enables the system malloc/free to be wrapped during compilation
+add_definitions(-DSFE_PICO_ALLOC_WRAP -DSFE_RP2350_XIP_CSI_PIN=47)
 
 include(pimoroni_pico_import.cmake)
 include(pico_sdk_import.cmake)
@@ -18,6 +28,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Initialize the SDK
 pico_sdk_init()
+
+add_subdirectory(sparkfun-pico/sparkfun_pico)
 
 add_subdirectory(drivers/st7701)
 add_subdirectory(drivers/ft6x36)
@@ -31,13 +43,16 @@ set(LV_LVGL_H_INCLUDE_SIMPLE ON)
 include_directories(lvgl)
 
 add_subdirectory(lvgl)
-add_subdirectory(SquareLineWorkspace/SquareLine_Project/ui)
+
+# Download and install SquareLineStudio and create a UI project, 480 x 480 pixel 16 bit
+# Specify its path here
+#add_subdirectory(SquareLineWorkspace/SquareLine_Project/ui)
 
 # Add your source files
 add_executable(${NAME}
     src/main.cpp
-    src/rp2_psram.c
-    src/rp2_psram.h
+    #    src/rp2_psram.c
+    #    src/rp2_psram.h
 )
 
 # Include required libraries
@@ -54,7 +69,8 @@ target_link_libraries(${NAME}
     pimoroni_i2c
     hardware_interp
     lvgl::lvgl
-    ui
+    sparkfun_pico
+    #ui # <-- Uncomment this if using SquareLineStudio
 )
 
 # Enable USB UART output only
